@@ -1,6 +1,6 @@
 FROM outrigger/servicebaselight
 
-LABEL maintainer "Phase2 <outrigger@phase2technology.com>"
+LABEL maintainer "beep@coder.hu"
 
 # Install packages.
 RUN apk add --update --no-cache nginx openssl gettext curl tzdata
