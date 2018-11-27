@@ -1,10 +1,10 @@
-# Outrigger HTTPS Proxy + WebSocket
+# NGINX HTTPS + WebSocket Proxy 
 
 Just a simple fork of 
 
 https://github.com/phase2/docker-https-proxy 
 
-to support websocket proxying for URLs starting with `/websocket`.
+to support websocket proxying for URLs containing `websocket`.
 
 nginx.xconf.templ has been extended to have
 

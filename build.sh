@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t outrigger/https-proxy .
+docker build -t beepsoft/https-proxy .
