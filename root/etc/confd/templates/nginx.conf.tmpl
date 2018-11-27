@@ -90,7 +90,7 @@ http {
             proxy_pass http://{{ getenv "UPSTREAM_DOMAIN" }}:{{ getenv "UPSTREAM_PORT" "80" }};
         }
 
-        location /websocket/ {
+        location ~ ".*websocket.*" {
             # Same as above
             {{ if ne $rate "0" -}}
             limit_req zone=flood burst={{ getenv "RATE_LIMIT_BURST_QUEUE" }} nodelay;

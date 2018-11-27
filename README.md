@@ -9,7 +9,7 @@ to support websocket proxying for URLs starting with `/websocket`.
 nginx.xconf.templ has been extended to have
 
 ````
-location /websocket/ {
+location ~ ".*websocket.*" {
     # Same as above
     {{ if ne $rate "0" -}}
     limit_req zone=flood burst={{ getenv "RATE_LIMIT_BURST_QUEUE" }} nodelay;
